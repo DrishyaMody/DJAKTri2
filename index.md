@@ -4,7 +4,7 @@ title: Student Blog
 ---
 
 
-## Welcome to the DJKA Homepage!
+## Build you Home Page here 
 This is about your journey. Start now!!!
 
 ## Overview of Hacks, Study and Tangibles
