@@ -4,7 +4,7 @@ comments: true
 layout: post
 title: Week 13 Review Ticket
 description: PBL Unit 1 / Week 13 Review Ticket using Utterance
-type: plans
+type: tangibles 
 courses: { compsci: {week: 13} }
 permalink: /plans/week13
 ---
