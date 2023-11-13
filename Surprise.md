@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Student Blog
+title: Surprise
 ---
 
 <button onclick = "window.location.href='https://www.youtube.com/watch?v=suhlSjSzMUk';">Kaiyu Click Me</button>
