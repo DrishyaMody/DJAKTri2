@@ -22,34 +22,29 @@ permalink: /Binary
             height: 100vh;
             margin: 0;
         }
-
         #analog-clock {
             position: relative;
             width: 200px;
             height: 200px;
             border: 2px solid #333;
-            border-radius: 50%;
+            border-radius: 150%;
             display: flex;
             align-items: center;
             justify-content: center;
         }
-
         .hand {
             position: absolute;
             transform-origin: 50% 100%;
             background-color: #333;
         }
-
         #hour-hand {
             width: 6px;
             height: 50px;
         }
-
         #minute-hand {
             width: 4px;
             height: 80px;
         }
-
         #second-hand {
             width: 2px;
             height: 75px;
@@ -77,8 +72,8 @@ permalink: /Binary
             const hourMarking = document.createElement('div');
             const angle = (360 / 12) * i;
             const radius = 85; // Adjust this to control the distance from the center
-            const x = 100 + radius * Math.sin((angle * Math.PI) / 180);
-            const y = 100 - radius * Math.cos((angle * Math.PI) / 180);
+            const x = 4 + radius * Math.sin((angle * Math.PI) / 180);
+            const y = -3 - radius * Math.cos((angle * Math.PI) / 180);
 
             hourMarking.style.transform = `translate(${x - 0.5}px, ${y}px) rotate(${angle}deg)`;
             hourMarking.classList.add('hour-marking');
@@ -120,4 +115,8 @@ permalink: /Binary
 
 </body>
 </html>
+
+
+
+
 
