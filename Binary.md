@@ -7,6 +7,7 @@ permalink: /Binary
 <button onclick = "window.location.href='https://www.youtube.com/watch?v=RrJXLdv1i74&ab_channel=PracticalNetworking';">In case you forget</button>
 
 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -27,10 +28,14 @@ permalink: /Binary
             width: 200px;
             height: 200px;
             border: 2px solid #333;
+<<<<<<< HEAD
             border-radius: 150%;
             display: flex;
             align-items: center;
             justify-content: center;
+=======
+            border-radius: 50%;
+>>>>>>> ca4693a3b28d992d3c56afe89eaeefefdce0ec2c
         }
         .hand {
             position: absolute;
@@ -40,15 +45,24 @@ permalink: /Binary
         #hour-hand {
             width: 6px;
             height: 50px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -100%) rotate(0deg);
         }
         #minute-hand {
             width: 4px;
             height: 80px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -100%) rotate(0deg);
         }
         #second-hand {
             width: 2px;
             height: 75px;
             background-color: red;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -100%) rotate(0deg);
         }
 
         .hour-marking {
@@ -57,6 +71,9 @@ permalink: /Binary
             height: 10px;
             background-color: #333;
             width: 1px;
+            top: 10px; /* Adjust this value for vertical alignment */
+            left: 50%;
+            transform: translateX(-50%) rotate(0deg);
         }
     </style>
     <title>Analog Clock</title>
@@ -72,8 +89,13 @@ permalink: /Binary
             const hourMarking = document.createElement('div');
             const angle = (360 / 12) * i;
             const radius = 85; // Adjust this to control the distance from the center
+<<<<<<< HEAD
             const x = 4 + radius * Math.sin((angle * Math.PI) / 180);
             const y = -3 - radius * Math.cos((angle * Math.PI) / 180);
+=======
+            const x = 0 + radius * Math.sin((angle * Math.PI) / 180);
+            const y = 80 - radius * Math.cos((angle * Math.PI) / 180);
+>>>>>>> ca4693a3b28d992d3c56afe89eaeefefdce0ec2c
 
             hourMarking.style.transform = `translate(${x - 0.5}px, ${y}px) rotate(${angle}deg)`;
             hourMarking.classList.add('hour-marking');
@@ -101,9 +123,9 @@ permalink: /Binary
         const minuteRotation = 360 / 60 * minutes + 360 / 60 * (seconds / 60);
         const secondRotation = 360 / 60 * seconds;
 
-        hourHand.style.transform = `translate(-50%, -80%) rotate(${hourRotation}deg)`;
-        minuteHand.style.transform = `translate(-50%, -70%) rotate(${minuteRotation}deg)`;
-        secondHand.style.transform = `translate(-50%, -70%) rotate(${secondRotation}deg)`;
+        hourHand.style.transform = `translate(-50%, -100%) rotate(${hourRotation}deg)`;
+        minuteHand.style.transform = `translate(-50%, -100%) rotate(${minuteRotation}deg)`;
+        secondHand.style.transform = `translate(-50%, -100%) rotate(${secondRotation}deg)`;
     }
 
     // Update the clock every second
@@ -117,6 +139,9 @@ permalink: /Binary
 </html>
 
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> ca4693a3b28d992d3c56afe89eaeefefdce0ec2c
