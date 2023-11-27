@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  #output {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  #gameResult {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .each-number {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  .binary-number {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    background-color: lightblue;
+    cursor: pointer;
+  }
+  
+  .binary-number.light {
+    background-color: skyblue;
+  }
+  
+  #randomizer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #randomizer:hover {
+    background-color: #45a049;
+  }
+  
+  #buttons-container {
+    margin-top: 20px;
+  }
+  
+  /* Add styling for your other elements as needed */
+  
