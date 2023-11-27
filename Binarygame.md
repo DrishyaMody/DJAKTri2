@@ -4,6 +4,9 @@ title: Binary
 permalink: /game
 ---
 
+# Binary Game
+
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -16,41 +19,52 @@ permalink: /game
       justify-content: center;
       height: 100vh;
       margin: 0;
-      background-color: #f0f0f0;
+      background-color: #f5f5f5;
     }
 
     #game-container {
       text-align: center;
       background-color: #ffffff;
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+      padding: 60px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      max-width: 500px; /* Adjust the width as needed */
+      width: 100%;
+      box-sizing: border-box;
+      margin: 20px;
     }
 
     h1 {
-      color: #333333;
+      color: #3498db;
     }
 
     #decimal-number {
-      font-size: 24px;
-      margin-bottom: 20px;
+      font-size: 36px;
+      margin-bottom: 30px;
       color: #333333;
     }
 
+    #binary-options {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
     .binary-button {
-      font-size: 18px;
+      font-size: 24px;
       margin: 10px;
       padding: 15px 30px;
       cursor: pointer;
-      background-color: #4CAF50;
+      background-color: #2ecc71;
       color: white;
       border: none;
       border-radius: 5px;
       transition: background-color 0.3s ease;
+      flex: 0 0 45%; /* Adjust the width of buttons as needed */
     }
 
     .binary-button:hover {
-      background-color: #45a049;
+      background-color: #27ae60;
     }
   </style>
   <title>Binary Game</title>
@@ -119,3 +133,4 @@ permalink: /game
 
 </body>
 </html>
+
