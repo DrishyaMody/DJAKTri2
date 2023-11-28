@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Logc Gates
+title: Logic Gates
 ---
 
 <button onclick = "window.location.href='https://www.youtube.com/watch?v=fw-N9P38mi4';">Intro to Logic Gates Video</button>
