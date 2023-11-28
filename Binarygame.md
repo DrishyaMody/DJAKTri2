@@ -1,136 +1,40 @@
 ---
 layout: default
-title: Binary
-permalink: /game
+title: Binary Game
 ---
-
-# Binary Game
-
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-      background-color: #f5f5f5;
-    }
-
-    #game-container {
-      text-align: center;
-      background-color: #ffffff;
-      border-radius: 15px;
-      padding: 60px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-      max-width: 500px; /* Adjust the width as needed */
-      width: 100%;
-      box-sizing: border-box;
-      margin: 20px;
-    }
-
-    h1 {
-      color: #3498db;
-    }
-
-    #decimal-number {
-      font-size: 36px;
-      margin-bottom: 30px;
-      color: #333333;
-    }
-
-    #binary-options {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .binary-button {
-      font-size: 24px;
-      margin: 10px;
-      padding: 15px 30px;
-      cursor: pointer;
-      background-color: #2ecc71;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
-      flex: 0 0 45%; /* Adjust the width of buttons as needed */
-    }
-
-    .binary-button:hover {
-      background-color: #27ae60;
-    }
-  </style>
-  <title>Binary Game</title>
+  <title>Number Game</title>
+  <link rel="stylesheet" href="BinaryGamecss.css">
 </head>
 <body>
 
-<div id="game-container">
-  <h1>Binary Game</h1>
-  <p id="decimal-number"></p>
-  <div id="binary-options"></div>
+<div id="output">Random Number: </div>
+<div id="gameResult"></div>
+
+<div id="buttons-container">
+  <div class="each-number">1</div>
+  <div class="each-number">2</div>
+  <div class="each-number">4</div>
+  <div class="each-number">8</div>
+  <!-- Add more numbers as needed -->
+
+  <div id="randomizer">Randomize</div>
 </div>
 
-<script>
-  function generateRandomDecimal() {
-    return Math.floor(Math.random() * 255) + 1;
-  }
+<div id="binary-container">
+  <div id="binary-128" class="binary-number">128</div>
+  <div id="binary-64" class="binary-number">64</div>
+  <div id="binary-32" class="binary-number">32</div>
+  <div id="binary-16" class="binary-number">16</div>
+  <div id="binary-8" class="binary-number">8</div>
+  <div id="binary-4" class="binary-number">4</div>
+  <div id="binary-2" class="binary-number">2</div>
+  <div id="binary-1" class="binary-number">1</div>
+</div>
 
-  function decimalToBinary(decimal) {
-    return (decimal >>> 0).toString(2);
-  }
-
-  function generateBinaryOptions(decimal) {
-    const binary = decimalToBinary(decimal);
-    const options = [];
-
-    for (let i = 0; i < 4; i++) {
-      options.push(decimalToBinary(generateRandomDecimal()));
-    }
-
-    options.push(binary);
-    options.sort(() => Math.random() - 0.5);
-
-    return options;
-  }
-
-  function updateGame() {
-    const decimalNumber = generateRandomDecimal();
-    const binaryOptions = generateBinaryOptions(decimalNumber);
-
-    document.getElementById('decimal-number').innerText = `Convert ${decimalNumber} to binary`;
-    document.getElementById('binary-options').innerHTML = '';
-
-    binaryOptions.forEach((option) => {
-      const button = document.createElement('button');
-      button.classList.add('binary-button');
-      button.innerText = option;
-      button.addEventListener('click', () => checkAnswer(option, decimalNumber));
-      document.getElementById('binary-options').appendChild(button);
-    });
-  }
-
-  function checkAnswer(selectedOption, decimalNumber) {
-    const correctBinary = decimalToBinary(decimalNumber);
-
-    if (selectedOption === correctBinary) {
-      alert('Correct! Well done.');
-    } else {
-      alert(`Incorrect. The correct answer is ${correctBinary}.`);
-    }
-
-    updateGame();
-  }
-
-  updateGame();
-</script>
-
+<script src="BinaryGamejs.js"></script>
 </body>
 </html>
-
