@@ -3,15 +3,14 @@ toc: true
 comments: true
 layout: post
 title: Binary Exploration Ideation
+description: Provide binary related activities for users to gain more knowledge of how binary works
 courses: { compsci: {week: 15} }
 type: hacks
 ---
 
-- provide binary related activities for users to gain more knowledge of how binary works
-
 ## Want
-- 3 interactive binary features
-- to have fun
+- 3 interactive binary features demonstrating how binary is used in code
+- to provide a fun experience for users to learn binary
 
 ## Binary clock:
 - Current prototype is pulled of internet but will be personalized as project progresses
