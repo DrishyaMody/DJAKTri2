@@ -124,5 +124,85 @@ title: Logic Gates
             <td><img src="" alt="NOR Gate" id="norGateImg"></td>
         </tr>
     </table>
+    <!-- Inside the table cell for the AND gate -->
 </body>
 </html>
+<hr>
+
+- **Input A and Input B**: These columns represent the input states for the logic gates. Each input can be either true (1) or false (0).
+
+- **AND, OR, NOT A, NOT B, XOR, NAND, NOR**: These columns represent the output of different logic gates based on the given inputs.
+
+  - **AND Gate**: Outputs true (1) only if both Input A and Input B are true (1).
+
+  - **OR Gate**: Outputs true (1) if at least one of the inputs (Input A or Input B) is true (1).
+
+  - **NOT A Gate**: Outputs the opposite of Input A. If Input A is true (1), NOT A is false (0), and vice versa.
+
+  - **NOT B Gate**: Outputs the opposite of Input B. If Input B is true (1), NOT B is false (0), and vice versa.
+
+  - **XOR Gate (Exclusive OR)**: Outputs true (1) if only one of the inputs (Input A or Input B) is true (1), but not both.
+
+  - **NAND Gate (NOT-AND)**: Outputs false (0) only if both Input A and Input B are true (1).
+
+  - **NOR Gate (NOT-OR)**: Outputs false (0) if at least one of the inputs (Input A or Input B) is true (1).
+
+Each row in the table represents a combination of input states, and the corresponding outputs for each logic gate are filled in based on the defined logic operations.
+
+<hr>
+![Alt text](image-4.png)
+<hr>
+## Understanding Logic Circuits
+
+In the realm of digital electronics, a logic circuit is a fundamental building block that processes binary information. It operates based on the principles of Boolean logic, where inputs and outputs are binary states (0 or 1).
+
+### Components of a Logic Circuit
+
+- **Inputs**: Binary signals (0 or 1) provided to the circuit.
+  
+- **Logic Gates**: Fundamental units that perform logical operations on the input signals. Common types include AND, OR, NOT, XOR, NAND, and NOR gates.
+
+- **Outputs**: The resulting binary signals produced by the logic gates.
+
+### Basic Logic Gates
+
+1. **AND Gate**:
+   - Output is true (1) only if all inputs are true (1).
+
+2. **OR Gate**:
+   - Output is true (1) if at least one input is true (1).
+
+3. **NOT Gate**:
+   - Outputs the opposite of the input. If the input is true (1), the output is false (0), and vice versa.
+
+4. **XOR Gate (Exclusive OR)**:
+   - Output is true (1) if only one input is true (1), but not both.
+
+5. **NAND Gate (NOT-AND)**:
+   - Output is false (0) only if all inputs are true (1).
+
+6. **NOR Gate (NOT-OR)**:
+   - Output is false (0) if at least one input is true (1).
+
+### Operation
+
+1. **Input Signal Reception**:
+   - Binary signals (0 or 1) are fed into the circuit.
+
+2. **Logical Processing**:
+   - Logic gates process the input signals based on their defined operations.
+
+3. **Output Generation**:
+   - The processed signals result in binary outputs.
+
+4. **Signal Propagation**:
+   - Outputs can further serve as inputs for subsequent logic gates, forming complex circuits.
+
+### Applications
+
+- **Digital Computers**: Logic circuits are the foundation of digital computing, where complex operations are achieved through combinations of simple logic gates.
+
+- **Electronic Devices**: Found in various electronic devices to control and process information in a binary format.
+
+Understanding the principles of logic circuits is crucial for anyone delving into the field of digital electronics and computer science.
+
