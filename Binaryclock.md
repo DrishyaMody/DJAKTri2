@@ -5,6 +5,7 @@ permalink: /Binaryclock
 ---
 <html lang="en">
 
+
 <head>
   <meta charset="UTF-8">
 
@@ -168,7 +169,7 @@ permalink: /Binaryclock
 <body translate="no">
 <script>
     // Number of stars to add
-    var numberOfStars = 100;
+    var numberOfStars = 1000;
 
     for (var i = 0; i < numberOfStars; i++) {
       // Generate random position for each star
