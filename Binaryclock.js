@@ -231,7 +231,7 @@ $(document).ready(function(){
     //var clock = new BinaryClock(active dot, inactive dot)
     //Directions - topBottom, bottomTop, leftRight, rightLeft
     
-    var clock = new BinaryClock("#EA6617", "#777");
+    var clock = new BinaryClock("#FFE81F", "#777");
     clock.direction("bottomTop");
     clock.tick();
   });

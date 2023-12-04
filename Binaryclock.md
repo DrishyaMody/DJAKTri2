@@ -1,8 +1,94 @@
 ---
 layout: default
-title: Binaryclock
+title: Binary clock
 permalink: /Binaryclock
 ---
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Rest of your head content -->
+
+  <style>
+    body {
+      background-color: #000;
+      margin: 0;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .star {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background-color: #FFF;
+      border-radius: 50%;
+      animation: twinkling 1s infinite;
+    }
+
+    @keyframes twinkling {
+      0% {
+        opacity: 0.5;
+      }
+
+      50% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0.5;
+      }
+    }
+
+    #bincont {
+      position: relative;
+      z-index: 1;
+    }
+
+    .dot,
+    .dotfilled,
+    .blank {
+      position: relative;
+      width: 20px;
+      height: 20px;
+      margin: 10px;
+      background-repeat: no-repeat;
+    }
+
+    span {
+      line-height: 50px;
+      display: inline-block;
+      vertical-align: middle;
+      margin: 10px;
+    }
+
+    #universe-text {
+      font-family: 'Star Wars', sans-serif;
+      font-size: 32px; /* Adjust the font size as needed */
+      color: #FFFFFF; /* Adjust the color as needed */
+    }
+  </style>
+
+</head>
+
+<body translate="no">
+  <!-- Rest of your body content -->
+
+  <!-- Adding an ID to the "STARWARS UNIVERSE" text for styling -->
+  <div id="universe-text">STARWARS UNIVERSE</div>
+
+  <!-- Rest of your body content -->
+
+  <!-- Rest of your script content -->
+
+</body>
+
+
+
 
 <html lang="en" >
 
@@ -30,57 +116,68 @@ permalink: /Binaryclock
   
   
   
-  
-<style>
-body{
-  background-color:#222;
-  margin:20px auto;
-  text-align:center;
-}
-br{
- line-height:0px; 
-}
-.dot, .dotfilled, .blank{
-  position:relative;
-  width:20px;
-  height:20px;
-  margin:10px;
- 
-  background-repeat:no-repeat;
-}
+   <meta charset="UTF-8">
 
-span{
-    line-height: 50px;
-    display: inline-block;
-    vertical-align: middle;
-    margin:10px;
-}
+  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/star-wars"> <!-- Star Wars font link -->
 
-#digital{
-  font-family:Courier New,Courier,monospace;
-  font-size:30px;
-  font-weight: bold;
-  color: white;
-}
+  <style>
+    body {
+      background-color: #000;
+      margin: 20px auto;
+      text-align: center;
+    }
 
-#actual{
-  font-family:Courier New,Courier,monospace;
-  font-size:30px;
-  font-weight: bold;
-  color: #82FA58;
-}
-</style>
+    br {
+      line-height: 0px;
+    }
 
-  <script>
-  window.console = window.console || function(t) {};
-</script>
+    .dot,
+    .dotfilled,
+    .blank {
+      position: relative;
+      width: 25px;
+      height: 25px;
+      margin: 15px;
+      background-repeat: no-repeat;
+    }
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    span {
+      line-height: 55px;
+      display: inline-block;
+      vertical-align: middle;
+      margin: 10px;
+    }
+
+    #digital {
+      font-family: 'Star Wars', Courier New, Courier, monospace;
+      font-size: 40px;
+      font-weight: bold;
+      color: #2E67F8; /*(lightsaber blue)*/    }
+
+    #actual {
+      font-family: 'Star Wars', Courier New, Courier, monospace;
+      font-size: 40px;
+      font-weight: bold;
+      color: #EB212E; /*lightstaber read*/
+    }
+  </style>
 
   
 </head>
 
 <body translate="no">
+<script>
+    // Number of stars to add
+    var numberOfStars = 100;
+
+    for (var i = 0; i < numberOfStars; i++) {
+      // Generate random position for each star
+      var randomX = Math.floor(Math.random() * window.innerWidth);
+      var randomY = Math.floor(Math.random() * window.innerHeight);
+
+      document.write('<div class="star" style="left:' + randomX + 'px; top:' + randomY + 'px;"></div>');
+    }
+  </script>
   <div id="bincont"></div>
 <div id="digital"></div>
 <div id="actual"></div>
@@ -319,7 +416,7 @@ $(document).ready(function () {
   //var clock = new BinaryClock(active dot, inactive dot)
   //Directions - topBottom, bottomTop, leftRight, rightLeft
 
-  var clock = new BinaryClock("#EA6617", "#777");
+  var clock = new BinaryClock("#FFE81F", "#777");
   clock.direction("bottomTop");
   clock.tick();
 });
