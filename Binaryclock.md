@@ -6,7 +6,12 @@ permalink: /Binaryclock
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+<<<<<<< HEAD
   <!-- Rest of your head content -->
+=======
+
+ 
+>>>>>>> a54718c55787d59a3259af38bb8ffb7bbafc5095
 
   <style>
     body {
