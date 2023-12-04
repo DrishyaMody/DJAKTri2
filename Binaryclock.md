@@ -9,7 +9,7 @@ permalink: /Binaryclock
 <head>
   <meta charset="UTF-8">
 
-  <!-- Rest of your head content -->
+ 
 
   <style>
     body {
