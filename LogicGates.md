@@ -149,9 +149,11 @@ title: Logic Gates
 
 Each row in the table represents a combination of input states, and the corresponding outputs for each logic gate are filled in based on the defined logic operations.
 
-<hr>
-![Alt text](image-4.png)
-<hr>
+<html>
+<div style = "background-image: url('image-2.png'); height:47vh; width:auto; background-repeat: no-repeat;background-size: cover;" >
+</div>
+</html>
+
 ## Understanding Logic Circuits
 
 In the realm of digital electronics, a logic circuit is a fundamental building block that processes binary information. It operates based on the principles of Boolean logic, where inputs and outputs are binary states (0 or 1).
