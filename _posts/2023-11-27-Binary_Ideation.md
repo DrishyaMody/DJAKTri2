@@ -29,4 +29,12 @@ type: hacks
 - user given a number and 5 selections of binary
 - user has to match the correct binary code to the given number
 
+## Binary Memory Game
+- blank cards that user can flip over to reveal a number in binary
+- user has to match all cards until there are no more left
+- helps user interact and get familiar with different binary fragments
+
 ## Feedback (post-review)
+- customization of the clock
+- explain logic gates and create different and complex actions
+- star wars theme
