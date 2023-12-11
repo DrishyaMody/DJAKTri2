@@ -169,7 +169,7 @@ permalink: /Binaryclock
 <body translate="no">
 <script>
     // Number of stars to add
-    var numberOfStars = 1000;
+    var numberOfStars = 1000    ;
 
     for (var i = 0; i < numberOfStars; i++) {
       // Generate random position for each star
