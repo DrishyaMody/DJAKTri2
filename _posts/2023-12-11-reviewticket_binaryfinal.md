@@ -13,7 +13,7 @@ courses: { compsci: {week: 18} }
 ### Binary Clock 
 [Binary Clock](https://drishyamody.github.io/DJAKTri2/Binaryclock)
 - A Star Wars Themed clock that shows the time in military form digitally, along with a digital clock form in binary, and an active binary visual representation/model to make the clock more visually appealing to the user. 
-- Created by Drishya Mody
+- Created by Drishya Mody (Aidan contributed to ideation of star wars theme across all projects and visual representations.)
 ### Binary Memory Game
 [Binary Memory Game](https://drishyamody.github.io/DJAKTri2/memory)
 - A fun interactive game where the user has to flip cards over till they can find the according pair and the goal is to get all pairs possible out of the shuffled deck. Follows the Star Wars Theme as well. 
