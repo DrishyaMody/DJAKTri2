@@ -34,9 +34,18 @@ courses: { compsci: {week: 18} }
 ### Team
 
 | Crossover Score | Runtime | Plan | GitHub | Analytics |
-| N/A | [DJAK Binary Final](https://drishyamody.github.io/DJAKTri2) |[Binary Ideation](https://drishyamody.github.io/DJAKTri2//2023/11/27/Binary_Ideation.html) | [DJAK github](https://github.com/DrishyaMody/DJAKTri2) | [Commits](https://github.com/DrishyaMody/DJAKTri2/commits/main)
+| 0.89/0.9 (98.89%)| [DJAK Binary Final](https://drishyamody.github.io/DJAKTri2) |[Binary Ideation](https://drishyamody.github.io/DJAKTri2//2023/11/27/Binary_Ideation.html) | [DJAK github](https://github.com/DrishyaMody/DJAKTri2) | [Commits](https://github.com/DrishyaMody/DJAKTri2/commits/main)
 
 ### Individuals 
 
-| Name | Team+Indi+Teacher | Runtime | Issues | Key Commit(s) | Analytics |
-| John M | 1.71=0.87+0.84+? | [Binary Calculator](https://nighthawkcoders.github.io/teacher_portfolio//c4.4/2023/09/14/javascript-binary-U2-1.html) | [CORS example](https://github.com/nighthawkcoders/flask_portfolio/issues/42#issuecomment-1847595229) | [SASS buttons](https://github.com/nighthawkcoders/teacher_portfolio/commit/f43211b97d4d50e79cf15d6ae470c0fef241dfc5), [Binary Source](https://raw.githubusercontent.com/nighthawkcoders/teacher_portfolio/bf145ebe8113f0e009494ed736324aa276b8913b/_posts/2023-09-14-javascript-binary-U2-1.md) | [Commits](https://github.com/nighthawkcoders/teacher_portfolio/commits?author=jm1021), [Profile](https://github.com/jm1021)|
+| Name | Team+Indi+Teacher | Analytics |
+| Drishya Mody | 0.89 + ? = | [Commits](https://github.com/DrishyaMody/DJAKTri2/commits/main/), [Profile](https://github.com/DrishyaMody)|
+
+| Name | Team+Indi+Teacher | Analytics |
+| Jared Baza | 0.89 + ? = | [Commits](https://github.com/DrishyaMody/DJAKTri2/commits/main/), [Profile](https://github.com/JBaza12)|
+
+| Name | Team+Indi+Teacher | Analytics |
+| Aidan Delgado | 0.89 + ? = | [Commits](https://github.com/DrishyaMody/DJAKTri2/commits/main/), [Profile](https://github.com/AidanDelgado2)|
+
+| Name | Team+Indi+Teacher | Analytics |
+| Kaiyu Sugiyama | 0.89 + ? = | [Commits](https://github.com/DrishyaMody/DJAKTri2/commits/main/), [Profile](https://github.com/KaiyuSugiyama)|
