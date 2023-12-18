@@ -42,7 +42,7 @@ courses: { compsci: {week: 18} }
 | Drishya Mody | 0.89 + 0.89 + 0.1 = 1.88 | [Commits](https://github.com/DrishyaMody/DJAKTri2/commits/main/), [Profile](https://github.com/DrishyaMody)|
 
 | Name | Team+Indi+Teacher | Analytics |
-| Jared Baza | 0.89 + 0.87 + 0.1 = 1.86| [Commits](https://github.com/DrishyaMody/DJAKTri2/commits/main/), [Profile](https://github.com/JBaza12)|
+| Jared Baza | 0.89 + 0.87 + 0.1 = 1.86 | [Commits](https://github.com/DrishyaMody/DJAKTri2/commits/main/), [Profile](https://github.com/JBaza12)|
 
 | Name | Team+Indi+Teacher | Analytics |
 | Aidan Delgado | 0.89 + 0.86 + 0.1 = 1.85| [Commits](https://github.com/DrishyaMody/DJAKTri2/commits/main/), [Profile](https://github.com/AidanDelgado2)|
