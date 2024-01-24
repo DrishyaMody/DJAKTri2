@@ -102,7 +102,7 @@ type: hacks
     <input type="text" id="uid" placeholder="User ID" />
     </p>
     <p><label for="password">Password:</label>
-    <input type="text" id="password" placeholder="Password" />
+    <input type="password" id="password" placeholder="Password" />
     </p>
     <p><label for="DOB">Date Of Birth:</label>
     <input type="text" id="DOB" placeholder="Date of Birth (YYYY-MM-DD)" />
