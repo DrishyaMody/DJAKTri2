@@ -25,18 +25,26 @@ type: hacks
         console.log("Uid = " + enteredUid)
         console.log("Password = " + enteredPassword)
         console.log("DOB = " + enteredDOB)
+        const signupHeaders = new Headers();
+      signupHeaders.set('111', '222');
+      
+      signupHeaders.set("Accept", "*/*");
+      signupHeaders.set("Accept-Language", "en-US,en;q=0.9");
+      signupHeaders.set("Content-Type", "application/json");
+
         signUp_api(enteredName, enteredUid, enteredPassword, enteredDOB)
         
       }
     
 
     function signUp_api(name, uid, pw, DOB){
-      var myHeaders = new Headers();
-      myHeaders.append("Accept", "*/*");
-      myHeaders.append("Accept-Language", "en-US,en;q=0.9");
-      myHeaders.append("Content-Type", "application/json");
-      //myHeaders.append("Cookie", "jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJfdWlkIjoidG9ueSJ9.jEShka0oXI1-uCuSTfo3ed5WRw3ASLNV0Tpn1kc5GB0");
-
+      let signupHeaders = new Headers();
+      signupHeaders.append('111', '222');
+      
+      signupHeaders.append("Accept", "*/*");
+      signupHeaders.append("Accept-Language", "en-US,en;q=0.9");
+      signupHeaders.append("Content-Type", "application/json");
+      
 
       var raw = JSON.stringify({
           "name" : name,
@@ -47,15 +55,16 @@ type: hacks
 
       var requestOptions = {
           method: 'POST',
-          headers: myHeaders,
+          headers: signupHeaders,
           body: raw,
           redirect: 'follow'
         };
 
-      fetch("http://127.0.0.1:8086/api/users", requestOptions)
+      fetch("http://localhost:8086/api/users/", requestOptions)
           .then(response => {
             if (response.ok) {
                 console.log("Successfully Signed Up");
+                alert("Account has been created. You will be directed to login page shortly.");
                 window.location.href = "http://127.0.0.1:4200/DJAKTri2//2023/01/22/SASS_Javascript_Login.html"
               } else {
                 console.error("Sign Up Failed");
@@ -98,8 +107,7 @@ type: hacks
     <p><label for="DOB">Date Of Birth:</label>
     <input type="text" id="DOB" placeholder="Date of Birth (YYYY-MM-DD)" />
     </p>
-    <button class="button-spacing" onclick="signUp_user()">Submit</button>
-
+    <button class="button-spacing">Submit</button>
     </form>
   </div>
    

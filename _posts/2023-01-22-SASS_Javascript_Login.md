@@ -21,6 +21,13 @@ type: hacks
       const enteredPassword = document.getElementById("password").value;
       console.log("Uid = " + enteredUid)
       console.log("Password = " + enteredPassword)
+      const signupHeaders = new Headers();
+      signupHeaders.set('111', '222');
+      
+      signupHeaders.set("Accept", "*/*");
+      signupHeaders.set("Accept-Language", "en-US,en;q=0.9");
+      signupHeaders.set("Content-Type", "application/json");
+
       login_api(enteredUid,enteredPassword)
         
       }
@@ -88,8 +95,8 @@ type: hacks
       <input type="password" name="password" id="password" required>
     </p>
     <p>
-     <button class="button-spacing" onclick="login_user()">Log In</button>
-          <button onClick = "window.location.href ='https://drishyamody.github.io/DJAKTri2//2023/01/22/Signup_page_demographics.html'" class="button-spacing" >Sign Up</button>
+     <button class="button-spacing">Log In</button>
+          <button onClick = "window.location.href ='http://127.0.0.1:4200/DJAKTri2//2023/01/22/Signup_page_demographics.html'" class="button-spacing" >Sign Up</button>
 
       
     </p>
