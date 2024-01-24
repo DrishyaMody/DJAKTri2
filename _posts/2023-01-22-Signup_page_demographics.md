@@ -65,7 +65,7 @@ type: hacks
             if (response.ok) {
                 console.log("Successfully Signed Up");
                 alert("Account has been created. You will be directed to login page shortly.");
-                window.location.href = "http://127.0.0.1:4200/DJAKTri2//2023/01/22/SASS_Javascript_Login.html"
+                window.location.href = "https://drishyamody.github.io/DJAKTri2//2023/01/22/SASS_Javascript_Login.html"
               } else {
                 console.error("Sign Up Failed");
                 // You can handle failed login attempts here
