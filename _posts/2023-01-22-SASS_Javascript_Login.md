@@ -96,7 +96,7 @@ type: hacks
     </p>
     <p>
      <button class="button-spacing">Log In</button>
-          <button onClick = "window.location.href ='http://127.0.0.1:4200/DJAKTri2//2023/01/22/Signup_page_demographics.html'" class="button-spacing" >Sign Up</button>
+          <button onClick = "window.location.href ='https://drishyamody.github.io/DJAKTri2//2023/01/22/Signup_page_demographics.html'" class="button-spacing" >Sign Up</button>
 
       
     </p>
