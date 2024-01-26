@@ -53,7 +53,7 @@ type: hacks
           redirect: 'follow'
         };
 
-      fetch("http://localhost:8086/api/users/authenticate", requestOptions)
+      fetch("http://localhost:8085/api/users/authenticate", requestOptions)
           .then(response => {
             if (response.ok) {
                 console.log("User logged in successfully");
